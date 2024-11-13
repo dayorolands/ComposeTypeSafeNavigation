@@ -61,7 +61,9 @@ class MainActivity : ComponentActivity() {
                             horizontalAlignment = Alignment.CenterHorizontally,
                             verticalArrangement = Arrangement.Center
                         ) {
-                            Button(onClick = { /*TODO*/ }) {
+                            Button(onClick = {
+                                navController.navigateUp()
+                            }) {
                                 Text(text = "${args.name} and ${args.age} years old")
                             }
                         }
